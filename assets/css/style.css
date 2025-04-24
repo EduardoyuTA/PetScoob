@@ -1,0 +1,242 @@
+/*Removendo os estilos padroes no navegador*/
+* {
+  box-sizing: border-box; /*propriedade que permite calcular o tamanho dos objetos com o seu espacamento interno (padding)*/
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/*Definindo a cor da fonte no corpo da página*/
+body {
+  color: #263238;
+}
+/*Header da pagina - cabeçalho*/
+header {
+  background: #e91e63;
+  display: flex; /*Propriedade que permite manipular os elementos filhos com novas propriedades de layout*/
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /*barra de navegação*/
+}
+header a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 32px;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/*Seção Inicio*/
+#inicio {
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 128px 80px;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+}
+/*Segunda Coluna da seção inicio*/
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.paragrafo {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  max-width: 600px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+/*Links da primeira Seção*/
+.botao {
+  background: #e91e63;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.botao-dois {
+  background: transparent;
+  color: #e91e63;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  text-underline-offset: 3px;
+}
+/*fim link*/
+
+/*base rosa da imagem principal*/
+.base {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  top: 580px;
+}
+/*-------------FIM DA SEÇÃO INÍCIO--------------*/
+
+/*Seção Clinica*/
+#clinica {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 32px;
+  padding: 180px 80px;
+  justify-content: center;
+}
+#clinica li {
+  margin-bottom: 16px;
+  margin-left: 32px;
+  font-size: 18px;
+}
+
+/*-----FIM DA SEÇÃO CLINICA-----*/
+/*---*/
+/*INICIO DA SEÇÃO FARMACIA*/
+
+#farmacia {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+#farmacia h2 {
+  margin: 0 auto;
+  max-width: 500px;
+}
+#farmacia p {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+#farmacia img {
+  margin: 64px;
+}
+/*-----FIM DA SEÇÃO CLINICA-----*/
+/*---*/
+/*INICIO DA SEÇÃO DUVIDAS*/
+
+#duvidas {
+  display: flex;
+  align-items: start;
+  gap: 32px;
+  padding-top: 128px;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+#duvidas .paragrafo {
+  max-width: 740px;
+}
+.duvida {
+  position: relative;
+}
+.duvida h3 {
+  border: 2px solid #e91e63;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 24px;
+}
+.duvida img {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.duvida p {
+  border-right: 1px solid #e91e63;
+  border-bottom: 1px solid #e91e63;
+  border-left: 1px solid #e91e63;
+  border-radius: 0 0 8px 8px;
+  margin-top: -8px;
+  padding: 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.duvida.ativa p {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
+  transition: 0.3s;
+}
+/*FIM DA SEÇÃO DUVIDA*/
+/*---*
+/*inicio de FOOTER*/
+
+footer {
+  background: rgba(233, 30, 99, 0.25);
+  padding: 64px 80px;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+footer img,
+footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+footer nav a {
+  color: #263138;
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  font-weight: 700;
+}
+
+footer p a {
+  color: #263138;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  font-weight: 600;
+}
+
+footer p {
+  margin-bottom: 16px;
+  max-width: 350px;
+}
+/*FIM FOOTER*/
+
+/*---INICIO DESENVOLVEDOR---*/
+#desenvolvedor {
+  background: #263238;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+#desenvolvedor a {
+  color: #fb7d44;
+}
+/*--FIM SEÇÃO DESENVOLVEDOR--*/
